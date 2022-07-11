@@ -18,7 +18,7 @@ const html = () => {
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: "HTML",
-                message: error.message()
+                message: error.message
             }))
         }))
         .pipe(fileInclude())

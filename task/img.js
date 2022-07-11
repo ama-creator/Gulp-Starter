@@ -19,7 +19,7 @@ const img = () => {
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: "Image",
-                message: error.message()
+                message: error.message
             }))
         }))
         .pipe(newer(path.img.dest))

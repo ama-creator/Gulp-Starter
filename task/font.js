@@ -17,7 +17,7 @@ const font = () => {
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: "Font",
-                message: error.message()
+                message: error.message
             }))
         }))
         .pipe(newer(path.font.dest))

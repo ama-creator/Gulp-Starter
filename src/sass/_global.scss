@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+body {
+  height: 100vh;
+}
+
+.simplebar-content-wrapper {
+  overflow: auto;
+}
+.simplebar-track {
+  background: $scrollbar-track !important;
+  width: 16px;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before{
+  background: $scrollbar-thumb !important;
+  opacity: 1;
+}
+.simplebar-scrollbar{
+  // height: 100px !important;
+  border-radius: 5px;
+  border: none;
+  left: 2px !important;
+  right: 2px !important;
+}
+.simplebar-track.simplebar-vertical {
+  width: 16px !important;
+}
+
+// html document
+body {
+  font-family: $Montserrat;
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 100px 0 0;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+.title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 20px;
+  color: $dark-color;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  color: $black-color;
+  margin-bottom: 33px;
+}
+
+.underline {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #F8F8FA;
+}
+

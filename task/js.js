@@ -16,7 +16,7 @@ const js = () => {
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: "JavaScript",
-                message: error.message()
+                message: error.message
             }))
         }))
         .pipe(babel())

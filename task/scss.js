@@ -22,7 +22,7 @@ const scss = () => {
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: "SCSS",
-                message: error.message()
+                message: error.message
             }))
         }))
         .pipe(sass())

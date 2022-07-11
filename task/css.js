@@ -23,7 +23,7 @@ const css = () => {
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: "CSS",
-                message: error.message()
+                message: error.message
             }))
         }))
         .pipe(concat("main.css"))
